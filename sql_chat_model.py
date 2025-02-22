@@ -50,7 +50,7 @@ class TranslationModel:
         self.app = self.workflow.compile(checkpointer=self.memory)
 
         # ✅ LangChain의 `RunnableWithMessageHistory`로 RAG 적용 가능하도록 설정
-        self.chain = self.prompt_template | self.llm
+        self.chain = self.prompt_template | self.llm  # |를 통해 prompt_template과 llm을 연결
         self.chain_with_history = RunnableWithMessageHistory(
             self.chain,
             lambda session_id: SQLChatMessageHistory(session_id=session_id, connection_string="sqlite:///sqlite.db"),
