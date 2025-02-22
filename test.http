@@ -1,0 +1,9 @@
+POST https://ideal-space-doodle-rqvpv97jjf5j5r-8000.app.github.dev/train
+
+###
+
+GET https://ideal-space-doodle-rqvpv97jjf5j5r-8000.app.github.dev/predict/left/0/right/0
+
+###
+
+GET https://cautious-space-memory-7qqwxvxjwcr5v4-8000.app.github.dev/predict/left/1/right/0
