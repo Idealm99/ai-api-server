@@ -1,6 +1,6 @@
 # sqlite 사용해서 히스토리를 저장합니다 
 # 파일은 자동 생성이 됩니다
-# GPT 도움을 받았습니다 ㅎㅎ
+# 원문에 있는 것들을 그대로 작성하였고 GPT 도움을 받았습니다 ㅎㅎ
 from dotenv import load_dotenv
 from langchain.chat_models import init_chat_model
 from langchain_core.messages import HumanMessage, BaseMessage, AIMessage
