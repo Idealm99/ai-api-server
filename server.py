@@ -2,8 +2,8 @@ from fastapi import FastAPI, Query
 from fastapi.responses import StreamingResponse
 from fastapi.staticfiles import StaticFiles
 
-import app_model
-import chat_model
+import practice.app_model as app_model
+import practice.chat_model as chat_model
 import sql_chat_model
 app = FastAPI()
 

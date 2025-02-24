@@ -1,0 +1,10 @@
+python-dotenv
+langchain
+langchain-core
+langgraph
+langchain-community
+langchain-openai
+typing-extensions
+fastapi
+sqlalchemy
+uvicorn
