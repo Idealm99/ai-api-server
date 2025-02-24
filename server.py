@@ -5,9 +5,17 @@ from fastapi.staticfiles import StaticFiles
 import practice.app_model as app_model
 import practice.chat_model as chat_model
 import sql_chat_model
+
+
+
+
 app = FastAPI()
 
 # app.mount("/static", StaticFiles(directory="static"), name="static")
+
+@app.get("/")
+def read_root():
+    return {"message": "Hello, World!"}
 
 model = sql_chat_model.TranslationModel()
 
